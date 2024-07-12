@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import Dock from "./Dock";
 import WindowManager from "../Window/WindowManager";
 import MenuBar from "../MenuBar/MenuBar";

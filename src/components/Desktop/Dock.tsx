@@ -28,14 +28,14 @@ const Dock: React.FC = () => {
   const renderIcon = (iconName: string) => {
     const IconComponent = (Icons as any)[iconName];
     return IconComponent ? (
-      <IconComponent className="text-3xl text-gray-800 dark:text-white" />
+      <IconComponent className="text-3xl text-appTextLight dark:text-appTextDark" />
     ) : (
       <div>Icon not found</div>
     );
   };
 
   return (
-    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-700 bg-opacity-30 dark:bg-opacity-30 backdrop-blur-md rounded-2xl p-2 flex space-x-2">
+    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-appBackgroundLight dark:bg-appBackgroundDark bg-opacity-30 dark:bg-opacity-30 backdrop-blur-md rounded-2xl p-2 flex space-x-2">
       {icons.map((icon) => (
         <div
           key={icon.id}
