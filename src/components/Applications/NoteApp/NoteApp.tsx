@@ -23,9 +23,9 @@ const NoteApp: React.FC<NoteAppProps> = ({ id }) => {
   }, [content, id, dispatch]);
 
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col p-4 bg-appBackgroundLight dark:bg-appBackgroundDark text-appTextLight dark:text-appTextDark">
       <textarea
-        className="flex-grow p-2 resize-none focus:outline-none"
+        className="flex-grow p-2 resize-none focus:outline-none bg-appBackgroundLight dark:bg-appBackgroundDark text-appTextLight dark:text-appTextDark"
         value={content}
         onChange={(e) => setContent(e.target.value)}
         placeholder="Type your note here..."

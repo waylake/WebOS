@@ -17,12 +17,15 @@ const BrowserControls: React.FC<BrowserControlsProps> = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex p-2 bg-gray-100">
+    <form
+      onSubmit={handleSubmit}
+      className="flex p-2 bg-appBackgroundLight dark:bg-appBackgroundDark text-appTextLight dark:text-appTextDark"
+    >
       <input
         type="text"
         value={inputUrl}
         onChange={(e) => setInputUrl(e.target.value)}
-        className="flex-grow px-2 py-1 border rounded-l"
+        className="flex-grow px-2 py-1 border rounded-l bg-appBackgroundLight dark:bg-appBackgroundDark text-appTextLight dark:text-appTextDark"
       />
       <button
         type="submit"

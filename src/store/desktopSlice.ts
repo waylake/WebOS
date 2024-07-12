@@ -16,13 +16,16 @@ interface DesktopState {
   icons: Icon[];
 }
 
+const storedTheme = localStorage.getItem("theme") as "light" | "dark";
+
 const initialState: DesktopState = {
   apps: [],
   openWindows: [],
-  theme: "light",
+  theme: storedTheme || "light",
   icons: [
-    { id: "internet", name: "Internet", iconName: "FaGlobe" },
+    { id: "internet", name: "Internet", iconName: "FaInternetExplorer" },
     { id: "note", name: "Notes", iconName: "FaStickyNote" },
+    { id: "setting", name: "Settings", iconName: "FaCog" }, // 새로운 설정 앱 아이콘 추가
   ],
 };
 

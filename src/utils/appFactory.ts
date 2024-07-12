@@ -1,6 +1,7 @@
-import { FaInternetExplorer, FaStickyNote } from "react-icons/fa";
+import { FaInternetExplorer, FaStickyNote, FaCog } from "react-icons/fa";
 import InternetBrowser from "../components/Applications/InternetBrowser/InternetBrowser";
 import NoteApp from "../components/Applications/NoteApp/NoteApp";
+import SettingApp from "../components/Applications/SettingApp/SettingApp";
 import { AppConfig } from "../types/application";
 
 const appConfigs: AppConfig[] = [
@@ -15,6 +16,12 @@ const appConfigs: AppConfig[] = [
     name: "Note",
     Icon: FaStickyNote,
     component: NoteApp,
+  },
+  {
+    id: "setting",
+    name: "Settings",
+    Icon: FaCog,
+    component: SettingApp,
   },
 ];
 
